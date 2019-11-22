@@ -3179,7 +3179,7 @@ Transform:
   - {fileID: 2016116917}
   - {fileID: 2118298966}
   - {fileID: 317953316}
-  - {fileID: 1632084726}
+  - {fileID: 953116964}
   - {fileID: 171650448}
   - {fileID: 630107927}
   - {fileID: 430470106}
@@ -3280,6 +3280,7 @@ Transform:
   - {fileID: 2052646269}
   - {fileID: 2107524940}
   - {fileID: 2058696379}
+  - {fileID: 1632084726}
   - {fileID: 1007857234}
   - {fileID: 406649219}
   - {fileID: 980210538}
@@ -3411,6 +3412,7 @@ Transform:
   - {fileID: 703945651}
   - {fileID: 421380841}
   - {fileID: 1019482262}
+  - {fileID: 822810398}
   - {fileID: 2079108182}
   - {fileID: 1445250459}
   - {fileID: 431118752}
@@ -3503,10 +3505,8 @@ Transform:
   - {fileID: 2013964359}
   - {fileID: 1717552867}
   - {fileID: 392477083}
-  - {fileID: 953116964}
   - {fileID: 857639203}
   - {fileID: 1273323850}
-  - {fileID: 822810398}
   - {fileID: 1404436736}
   - {fileID: 445359118}
   - {fileID: 1810247456}
@@ -7293,7 +7293,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &197350350
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7366,6 +7366,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 574249634}
+  - {fileID: 753292324}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -18745,6 +18746,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24e19db2d124302438713b5692c4fcfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerName: 
 --- !u!4 &557422572
 Transform:
   m_ObjectHideFlags: 0
@@ -24726,6 +24728,83 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6131de40aed3cd8449d147f9febf8073, type: 3}
+--- !u!1 &753292323
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 753292324}
+  - component: {fileID: 753292326}
+  - component: {fileID: 753292325}
+  m_Layer: 5
+  m_Name: PreviousTimes
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &753292324
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753292323}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 197350353}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -160, y: -145}
+  m_SizeDelta: {x: 300, y: 200}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &753292325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753292323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 8243fb212b1dda2418d9429c3942ce70, type: 3}
+    m_FontSize: 16
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 1
+    m_MaxSize: 16
+    m_Alignment: 2
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1.2
+  m_Text: 
+--- !u!222 &753292326
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753292323}
+  m_CullTransparentMesh: 0
 --- !u!4 &753697654 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2635320246044965138, guid: 6131de40aed3cd8449d147f9febf8073,

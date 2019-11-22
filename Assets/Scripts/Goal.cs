@@ -11,12 +11,18 @@ public class Goal : MonoBehaviour
     {
         if (coll.gameObject.tag == "Player")
         {
+            // 1
+            var timer = FindObjectOfType<Timer>();
+            // 2
+            GameManager.instance.SaveTime(timer.time);
+
             var audioSource = GetComponent<AudioSource>();
             if (audioSource != null && goalClip != null)
             {
                 audioSource.PlayOneShot(goalClip);
             }
             GameManager.instance.RestartLevel(0.5f);
+
         }
     }
 
