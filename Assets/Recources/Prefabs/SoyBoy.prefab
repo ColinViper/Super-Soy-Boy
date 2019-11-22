@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 4843924446103978577}
   - component: {fileID: 4843924446103978576}
   - component: {fileID: 4843924446103978590}
-  - component: {fileID: 1849054297179740323}
   - component: {fileID: 6958492172769969504}
+  - component: {fileID: 2899938991442318082}
   m_Layer: 0
   m_Name: SoyBoy
   m_TagString: Player
@@ -146,28 +146,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1849054297179740323
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4843924446103978581}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c2d9ef354f3d854796f22b7230d973b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 14
-  accel: 6
-  isJumping: 0
-  jumpSpeed: 8
-  jumpDurationThreshold: 0.25
-  airAccel: 3
-  jump: 14
-  runClip: {fileID: 8300000, guid: 165d34f726d50f249946eef95f804e77, type: 3}
-  jumpClip: {fileID: 8300000, guid: 5397d8f0c36a76f4c9f6dcf720cf78b8, type: 3}
-  slideClip: {fileID: 8300000, guid: b27cd1c888b94524c92722e6a15eb294, type: 3}
 --- !u!82 &6958492172769969504
 AudioSource:
   m_ObjectHideFlags: 0
@@ -264,3 +242,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2899938991442318082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4843924446103978581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43becaf83e431374e94c43ddf2bd9808, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 14
+  accel: 6
+  isJumping: 0
+  jumpSpeed: 8
+  jumpDurationThreshold: 0.25
+  airAccel: 3
+  jump: 14
+  runClip: {fileID: 8300000, guid: 165d34f726d50f249946eef95f804e77, type: 3}
+  jumpClip: {fileID: 8300000, guid: 5397d8f0c36a76f4c9f6dcf720cf78b8, type: 3}
+  slideClip: {fileID: 8300000, guid: b27cd1c888b94524c92722e6a15eb294, type: 3}

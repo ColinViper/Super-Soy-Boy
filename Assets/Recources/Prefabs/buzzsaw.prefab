@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 1869930784258429828}
   - component: {fileID: 1869930784258429829}
   - component: {fileID: 1869930784258429830}
-  - component: {fileID: 1948017221}
   - component: {fileID: 1948017220}
-  - component: {fileID: 4888752193333711204}
+  - component: {fileID: 1826155054668344916}
+  - component: {fileID: 1875964958557425417}
   m_Layer: 0
   m_Name: buzzsaw
   m_TagString: Untagged
@@ -122,22 +122,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1.28
---- !u!114 &1948017221
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1869930784258429831}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf2230abc85e2264cafaca33b43117b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerDeathPrefab: {fileID: 8462369606204122408, guid: 4293fa3c62656714ab4b942880f3438f,
-    type: 3}
-  deathClip: {fileID: 8300000, guid: 20d68b3df7b8bf047a3ed6c5e47ae6c5, type: 3}
-  hitSprite: {fileID: 21300000, guid: e34df7d72fac13944bc0e0fe2b92e9cd, type: 3}
 --- !u!82 &1948017220
 AudioSource:
   m_ObjectHideFlags: 0
@@ -234,7 +218,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &4888752193333711204
+--- !u!114 &1826155054668344916
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -243,7 +227,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 1869930784258429831}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e2a299c2b986b2488c466f29b4564ff, type: 3}
+  m_Script: {fileID: 11500000, guid: bceca92255775bc4aa43bb696348f146, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerDeathPrefab: {fileID: 8462369606204122408, guid: 4293fa3c62656714ab4b942880f3438f,
+    type: 3}
+  deathClip: {fileID: 8300000, guid: 20d68b3df7b8bf047a3ed6c5e47ae6c5, type: 3}
+  hitSprite: {fileID: 21300000, guid: e34df7d72fac13944bc0e0fe2b92e9cd, type: 3}
+--- !u!114 &1875964958557425417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1869930784258429831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efe94690177e4fa4bab96bfe69c0065d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rotationsPerMinute: 640

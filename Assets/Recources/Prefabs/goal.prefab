@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 50000013331180092}
   - component: {fileID: 82000011479438520}
   - component: {fileID: 61000010783292460}
-  - component: {fileID: 114000011389256214}
+  - component: {fileID: 7862206587656223431}
   m_Layer: 0
   m_Name: goal
   m_TagString: Untagged
@@ -227,7 +227,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.78, y: 0.49}
   m_EdgeRadius: 0
---- !u!114 &114000011389256214
+--- !u!114 &7862206587656223431
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -236,7 +236,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1000012036862378}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d693dedb86fee234eade52718c19c65a, type: 3}
+  m_Script: {fileID: 11500000, guid: 4e557fee87cd0c945af21eff33a60ef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   goalClip: {fileID: 8300000, guid: 236f4bd026e2c3a4dbd496505a4cec05, type: 3}
